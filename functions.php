@@ -5,10 +5,17 @@
  * Tie wordpress to this theme
  */
 
-# Add support for the wordpress html <title> tag.
+# Add customized supports for the exordium theme
 if ( !function_exists( 'exordium_setup' ) ) {
     function exordium_setup() {
-        add_theme_support( 'title-tag' );
+
+      # <title> support
+      add_theme_support( 'title-tag' );
+
+      # post and page features thumbnails
+      add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+      add_image_size( 'fullwidth', 1920, 1080 );
+
     }
 
     add_action( 'after_setup_theme', 'exordium_setup' );
