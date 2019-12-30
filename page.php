@@ -81,6 +81,7 @@ if ( have_posts() ) :
   </div>
 </section>
 <?php
+        the_content();
       }
     endwhile;
 else :
