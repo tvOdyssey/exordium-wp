@@ -1,8 +1,8 @@
 <div class="navbar-container ">
   <nav class="navbar navbar-expand-lg navbar-dark" data-overlay data-sticky="top">
     <div class="container">
-      <a class="navbar-brand fade-page" href="index.html">
-        <img src="assets/img/logo-white.svg" alt="Leap">
+      <a class="navbar-brand fade-page" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <?php get_template_part('partials/logo/logo-header'); ?>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />

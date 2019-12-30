@@ -5,9 +5,9 @@ get_header();
 
 # Include the header file
 if ( is_front_page() ) {
-  include('partials/nav/nav-home.php');
+  get_template_part('partials/nav/nav-home');
 } else {
-  include('partials/nav/nav-page.php');
+  get_template_part('partials/nav/nav-page');
 }
 
 # Footer

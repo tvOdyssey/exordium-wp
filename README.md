@@ -4,7 +4,6 @@
 
 ## Documentation
 
-Below will be some documentation explaining why certain elements and aspects are set up the way they are.
+Below is some documentation to help with ones understanding of certain functions inside this theme.
 
-*Navigation Templates*
-- `partials/nav` are used to have specific nav headers for each type of page. e.g. `is_front_page`, `reg_pages`, `posts`
+`get_template_part()` as there are many different elements that make this theme work, and many customized designs for specific pages, like `is_front_page`, we need to repeatedly obtain the same code over and over.

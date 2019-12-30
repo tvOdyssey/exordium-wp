@@ -2,8 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-theme-dark" data-sticky="top">
     <div class="container">
       <a class="navbar-brand fade-page" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <i class="far fa-wifi mr-1"></i>
-        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+        <?php get_template_part('partials/logo/logo-header'); ?>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fal fa-bars icon navbar-toggler-open"></i>
