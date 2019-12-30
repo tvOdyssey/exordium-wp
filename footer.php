@@ -10,16 +10,31 @@
         </div>
         <div class="row mb-4">
           <div class="col">
+
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'footer-menu',
+                'container' => false,
+                'menu_class' => 'nav justify-content-center'
+                )
+              );
+            ?>
+
             <ul class="nav justify-content-center">
-              <li class="nav-item"><a href="#" class="nav-link">Welcome</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Welcome</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">Support</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Support</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">Members</a>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Members</a>
               </li>
             </ul>
           </div>
