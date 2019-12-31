@@ -2,6 +2,12 @@
 
 `exordium-wp` is a customized wordpress theme made for the https://exordium.dev website. Exordium is a virtual private networking software in the works.
 
+## Before we go live
+- List of very useful plugins that should be setup and added when we initially go live
+ - `bbPress` for support forum.
+ - `WP Subtitle`, support has been added for this plugin on the theme side.
+ - `WP User Avatar`, administrative users can choose to upload an avatar rather then use the gravatar function provided by Wordpress.
+
 ## Documentation
 
 Below is some documentation to help with ones understanding of certain functions inside this theme.
