@@ -81,25 +81,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- fontawesome fonts -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/plugins/fontawesome/all.js"></script>
-
-    <!-- optional vendors -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/aos.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scrollMonitor.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/svg-injector.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.countdown.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/flatpicker.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/flickity.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/ion.rangeSlider.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/isotope.pkgd.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/plyr.polyfilled.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/prism.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/smooth-scroll.polyfills.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/twitterFetcher.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/typed.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.smartWizard.js"></script>
-
     <!-- plugin vendors -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/plugins/fancyapps/jquery.fancybox.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/plugins/jarallax/jarallax.min.js"></script>
