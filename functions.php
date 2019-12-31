@@ -45,4 +45,10 @@ function exordium_register_css() {
 }
 add_action( 'init', 'exordium_register_css' );
 
+# Subtitle Support
+function my_wp_subtitle_page_part_support() {
+	add_post_type_support( 'my_post_type', 'wps_subtitle' );
+}
+add_action( 'init', 'my_wp_subtitle_page_part_support' );
+
 ?>

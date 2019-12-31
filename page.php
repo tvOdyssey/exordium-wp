@@ -37,7 +37,7 @@ if ( have_posts() ) :
     <div class="row my-4 my-md-6" data-aos="fade-up">
       <div class="col-lg-9 col-xl-8">
         <h1 class="display-4"><?php the_title(); ?></h1>
-        <p class="lead mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+        <p class="lead mb-0"><?php the_subtitle(); ?></p>
       </div>
     </div>
   </div>
