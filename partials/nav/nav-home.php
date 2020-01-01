@@ -1,5 +1,5 @@
 <div class="navbar-container bg-theme-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-theme-dark" data-sticky="top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-theme-dark position-fixed" data-sticky="top">
     <div class="container">
       <a class="navbar-brand fade-page" href="<?php echo esc_url( home_url( '/' ) ); ?>">
         <?php get_template_part('partials/logo/logo-header'); ?>
