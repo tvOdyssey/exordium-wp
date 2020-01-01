@@ -1,0 +1,21 @@
+/* Create some new custom wordpress elements */
+
+/* Rewrite the bottom navigation bar */
+ul.nav-footer.nav.justify-content-center {
+
+}
+ul.nav-footer.nav.justify-content-center .menu-item {
+
+}
+footer .menu-item a {
+  transition: opacity .2s linear;
+  display: block;
+  padding: .5rem 1rem;
+}
+footer .menu-item a:not(.active):not(.disabled):not(:hover) {
+    opacity: .5;
+}
+
+ul.nav-footer.nav.justify-content-center .menu-item a:hover {
+
+}

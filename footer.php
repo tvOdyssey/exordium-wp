@@ -20,23 +20,6 @@
               );
             ?>
 
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Welcome</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Support</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Members</a>
-              </li>
-            </ul>
           </div>
         </div>
         <div class="row justify-content-center mt-5 mb-5">
