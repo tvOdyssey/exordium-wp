@@ -3,13 +3,6 @@
 # Include default page header
 get_header();
 
-# Include the header file
-if ( is_front_page() ) {
-  get_template_part('partials/nav/nav-home');
-} else {
-  get_template_part('partials/nav/nav-page');
-}
-
 # Page Content
 if ( have_posts() ) :
   while ( have_posts() ) : the_post();
@@ -29,7 +22,7 @@ if ( have_posts() ) :
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="index.html">Welcome</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page"><?php the_title(); ?></li>
           </ol>
@@ -63,7 +56,7 @@ if ( have_posts() ) :
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="index.html">Home</a>
+                  <a href="index.html">Welcome</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="#">Pages</a>
