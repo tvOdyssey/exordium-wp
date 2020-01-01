@@ -3,9 +3,7 @@
       <div class="container">
         <div class="row mb-4 justify-content-center">
           <div class="col-auto">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-              <i class="fal fa-2x fa-wifi icon icon-lg"></i>
-            </a>
+            <?php get_template_part('partials/logo/logo-footer'); ?>
           </div>
         </div>
         <div class="row mb-4">
