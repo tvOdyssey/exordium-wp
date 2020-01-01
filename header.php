@@ -13,6 +13,7 @@
     <!-- default style -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-home.css" rel="stylesheet" type="text/css" media="all" />
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-additions.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-wordpress.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- animate.css -->
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/plugins/animate/animate.css" type="text/css" media="all">
