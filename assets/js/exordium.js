@@ -1,7 +1,3 @@
-/*!
-  * Leap Bootstrap Theme
-  * Copyright 2018-2019 Medium Rare (undefined)
-  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('aos'), require('jquery'), require('jquery-countdown'), require('scrollmonitor'), require('flatpickr'), require('flickity'), require('ion-rangeslider'), require('isotope-layout'), require('jarallax'), require('plyr'), require('prismjs'), require('smooth-scroll'), require('@tanem/svg-injector'), require('twitter-fetcher'), require('typed.js'), require('smartwizard')) :
   typeof define === 'function' && define.amd ? define(['exports', 'aos', 'jquery', 'jquery-countdown', 'scrollmonitor', 'flatpickr', 'flickity', 'ion-rangeslider', 'isotope-layout', 'jarallax', 'plyr', 'prismjs', 'smooth-scroll', '@tanem/svg-injector', 'twitter-fetcher', 'typed.js', 'smartwizard'], factory) :
@@ -5005,4 +5001,4 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=theme.js.map
+//# sourceMappingURL=exordium.js.map
