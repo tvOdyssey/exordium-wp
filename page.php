@@ -46,6 +46,7 @@ if ( have_posts() ) :
   </div>
 </section>
 <?php
+        the_content();
       } else {
         get_template_part('partials/nav/nav-page-light');
 ?>
@@ -99,10 +100,13 @@ if ( have_posts() ) :
 </svg>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <?php the_content(); ?>
+      </div>
+    </section>
 <?php
       }
-
-      the_content();
       }
     endwhile;
 else :
