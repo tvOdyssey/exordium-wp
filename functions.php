@@ -47,6 +47,15 @@ function exordium_get_theme_directory_uri() {
 }
 add_shortcode( 'themeuri', 'exordium_get_theme_directory_uri' );
 
+# Increase file upload size
+function exordium_site_upload_size_limit( $size ) {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        $size = 25 * 1024 * 1024;
+    }
+    return $size;
+}
+add_filter( 'upload_size_limit', 'exordium_site_upload_size_limit', 20 );
+
 /**
  * FILE REPLACEMENT AND SCRIPTS
  */
