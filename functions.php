@@ -25,7 +25,8 @@ if ( !function_exists( 'exordium_setup' ) ) {
 function exordium_new_menus() {
   register_nav_menus(
     array(
-      'primary-menu' => __( 'Primary Menu', 'exordium' ),
+      'primary-menu-left' => __( 'Primary Menu (Left/Nav)', 'exordium' ),
+      'primary-menu-right' => __( 'Primary Menu (Right/Buttons)', 'exordium' ),
       'hamburger-menu' => __( 'Hamburger Menu', 'exordium' ),
       'footer-menu' => __( 'Footer Menu', 'exordium' )
     )
