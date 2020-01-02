@@ -39,6 +39,12 @@ function my_wp_subtitle_page_part_support() {
 }
 add_action( 'init', 'my_wp_subtitle_page_part_support' );
 
+# Add shortcode for themeuri in posts and pages on wordpress side
+function exordium_get_theme_directory_uri() {
+    return get_template_directory_uri();
+}
+add_shortcode( 'themeuri', 'exordium_get_theme_directory_uri' );
+
 /**
  * FILE REPLACEMENT AND SCRIPTS
  */
