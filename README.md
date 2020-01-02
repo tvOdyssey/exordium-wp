@@ -2,6 +2,8 @@
 
 `exordium-wp` is a customized wordpress theme made for the https://exordium.dev website. Exordium is a virtual private networking software in the works.
 
+![Screenshot of the Exordium theme](screenshot.png)
+
 ## Before we go live
 - List of very useful plugins that should be setup and added when we initially go live
  - `bbPress` for support forum.
