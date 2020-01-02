@@ -44,7 +44,7 @@ if ( have_posts() ) :
     </div>
   </div>
   <div class="divider flip-x">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-1.svg" alt="graphical divider" data-inject-svg />
   </div>
 </section>
 <?php
@@ -82,7 +82,7 @@ if ( have_posts() ) :
     </div>
   </div>
   <div class="divider">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-1.svg" alt="graphical divider" data-inject-svg />
   </div>
 </section>
 <section>
