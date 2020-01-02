@@ -49,7 +49,7 @@
         <div class="row justify-content-center text-center">
           <div class="col-xl-10">
             <small class="text-muted">
-              © 2019 All Rights Reserved. <?php echo esc_html( get_bloginfo( 'name' ) ); ?>.
+              © <?php echo date("Y"); ?> All Rights Reserved. <?php echo esc_html( get_bloginfo( 'name' ) ); ?>.
             </small>
           </div>
         </div>
