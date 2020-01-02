@@ -42,7 +42,7 @@ if ( have_posts() ) :
     </div>
   </div>
   <div class="divider flip-x">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-1.svg" alt="graphical divider" data-inject-svg />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
   </div>
 </section>
 <?php
@@ -73,14 +73,14 @@ if ( have_posts() ) :
   </div>
   <div class="decoration-wrapper d-none d-md-block">
     <div class="decoration left middle-y scale-2" data-jarallax-element="100">
-      <img class="bg-primary" src="assets/img/decorations/deco-dots-4.svg" alt="deco-dots-4 decoration" data-inject-svg />
+      <img class="bg-primary" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/decorations/deco-dots-4.svg" alt="deco-dots-4 decoration" data-inject-svg />
     </div>
     <div class="decoration bottom right scale-2" data-jarallax-element="100 100">
-      <img class="bg-primary-2" src="assets/img/decorations/deco-blob-6.svg" alt="deco-blob-6 decoration" data-inject-svg />
+      <img class="bg-primary-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/decorations/deco-blob-6.svg" alt="deco-blob-6 decoration" data-inject-svg />
     </div>
   </div>
   <div class="divider">
-    <img src="assets/img/dividers/divider-1.svg" alt="graphical divider" data-inject-svg />
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
   </div>
 </section>
 <section>
