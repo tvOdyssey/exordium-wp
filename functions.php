@@ -28,7 +28,8 @@ function exordium_new_menus() {
       'primary-menu-left' => __( 'Primary Menu (Left/Nav)', 'exordium' ),
       'primary-menu-right' => __( 'Primary Menu (Right/Buttons)', 'exordium' ),
       'hamburger-menu' => __( 'Hamburger Menu', 'exordium' ),
-      'footer-menu' => __( 'Footer Menu', 'exordium' )
+      'footer-menu' => __( 'Footer Menu', 'exordium' ),
+      'footer-menu-social' => __( 'Social Footer Menu', 'exordium' )
     )
   );
 }
