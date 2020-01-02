@@ -11,35 +11,35 @@
 <div class="py-2 py-lg-0">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a href="#" class="nav-link">
+      <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Welcome' ) ) ); ?>" class="nav-link">
         <i class="far fa-fw fa-home"></i>
-        Welcome
+        <?php esc_html_e( 'Welcome', 'textdomain' ); ?>
       </a>
     </li>
     <!-- mobile only version -->
     <li class="nav-item d-xs-block d-lg-none">
-      <a href="#" class="nav-link">
+      <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'About' ) ) ); ?>" class="nav-link">
         <i class="far fa-fw fa-users"></i>
-        About
+        <?php esc_html_e( 'About', 'textdomain' ); ?>
       </a>
     </li>
     <!-- desktop only version -->
     <li class="nav-item d-none d-lg-block">
       <a href="#" class="nav-link" data-toggle="collapse" data-target="#aboutNavItem" aria-controls="aboutNavItem" aria-expanded="false" aria-label="About">
         <i class="far fa-fw fa-users"></i>
-        About
+        <?php esc_html_e( 'About', 'textdomain' ); ?>
       </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link">
+      <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact' ) ) ); ?>" class="nav-link">
         <i class="far fa-fw fa-comments"></i>
-        Contact
+        <?php esc_html_e( 'Contact', 'textdomain' ); ?>
       </a>
     </li>
     <li class="nav-item dropdown">
-      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
+      <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Support' ) ) ); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">
         <i class="far fa-fw fa-question-circle"></i>
-        Support
+        <?php esc_html_e( 'Support', 'textdomain' ); ?>
       </a>
       <div class="dropdown-menu row">
         <div class="col-auto px-0" data-dropdown-content>
