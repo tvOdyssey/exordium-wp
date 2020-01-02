@@ -52,6 +52,7 @@ if ( have_posts() ) :
 ?>
 <section class="bg-primary-alt header-inner o-hidden">
   <div class="container">
+    <?php if (!is_front_page()) { ?>
     <div class="row my-3">
       <div class="col">
         <nav aria-label="breadcrumb">
@@ -64,6 +65,7 @@ if ( have_posts() ) :
         </nav>
       </div>
     </div>
+    <?php } ?>
     <div class="row py-6 text-center justify-content-center align-items-center">
       <div class="col-xl-8 col-lg-10">
         <h1 class="display-4"><?php the_title(); ?></h1>
