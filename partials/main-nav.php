@@ -1,3 +1,13 @@
+<?php
+  if (has_nav_menu( 'primary-menu-left' )) {
+    wp_nav_menu( array(
+      'theme_location' => 'primary-menu-left',
+      'container' => false,
+      'menu_class' => 'navbar-nav'
+      )
+    );
+  } else {
+?>
 <div class="py-2 py-lg-0">
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -65,4 +75,20 @@
     </li>
   </ul>
 </div>
+<?php
+  }
+
+  if (has_nav_menu( 'primary-menu-right' )) {
+    wp_nav_menu( array(
+      'theme_location' => 'primary-menu-right',
+      'container' => false,
+      'menu_class' => 'nav justify-content-center'
+      )
+    );
+  } else {
+?>
 <a href="#" class="btn btn-theme ml-lg-3">Download</a>
+<?php
+  }
+
+?>

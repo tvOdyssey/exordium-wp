@@ -10,12 +10,14 @@
           <div class="col">
 
             <?php
-              wp_nav_menu( array(
-                'theme_location' => 'footer-menu',
-                'container' => false,
-                'menu_class' => 'nav justify-content-center'
-                )
-              );
+              if (has_nav_menu( 'footer-menu' )) {
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-menu',
+                  'container' => false,
+                  'menu_class' => 'nav justify-content-center'
+                  )
+                );
+              }
             ?>
 
           </div>
