@@ -71,7 +71,7 @@ function exordium_register_js() {
   wp_enqueue_script( 'boostrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 1.0, true);
 
   # FontAwesome Include
-  wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/assets/plugins/fontawesome/all.js', array ( 'jquery' ), 1.0, true);
+  wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/assets/plugins/fontawesome/all.js', array ( 'jquery' ), 2.0, true);
 
   # Theme Related Plugins
   wp_enqueue_script( 'aos', get_template_directory_uri() . '/assets/js/aos.js', array ( 'jquery' ), 1.0, true);
