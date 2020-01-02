@@ -1,5 +1,5 @@
     <!-- footer -->
-    <footer class="pb-5 bg-theme-dark text-light">
+    <footer class="bg-theme-dark text-light">
       <div class="container">
         <div class="row mb-4 justify-content-center">
           <div class="col-auto">
