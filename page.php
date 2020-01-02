@@ -17,6 +17,7 @@ if ( have_posts() ) :
 <section class="bg-dark text-light header-inner p-0 jarallax o-hidden" data-overlay data-jarallax data-speed="0.2" style="padding-top: 73px !important;">
   <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Image" class="jarallax-img opacity-30">
   <div class="container py-0 layer-2">
+    <?php if (!is_front_page()) { ?>
     <div class="row my-3">
       <div class="col">
         <nav aria-label="breadcrumb">
@@ -29,6 +30,7 @@ if ( have_posts() ) :
         </nav>
       </div>
     </div>
+    <?php } ?>
     <div class="row my-4 my-md-6" data-aos="fade-up">
       <div class="col-lg-9 col-xl-8">
         <h1 class="display-4"><?php the_title(); ?></h1>
@@ -52,7 +54,6 @@ if ( have_posts() ) :
 ?>
 <section class="bg-primary-alt header-inner o-hidden">
   <div class="container">
-    <?php if (!is_front_page()) { ?>
     <div class="row my-3">
       <div class="col">
         <nav aria-label="breadcrumb">
@@ -65,7 +66,6 @@ if ( have_posts() ) :
         </nav>
       </div>
     </div>
-    <?php } ?>
     <div class="row py-6 text-center justify-content-center align-items-center">
       <div class="col-xl-8 col-lg-10">
         <h1 class="display-4"><?php the_title(); ?></h1>
