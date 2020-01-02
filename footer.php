@@ -37,23 +37,23 @@
           <div class="col-auto">
             <ul class="nav">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="https://www.instagram.com/exordium.dev/" class="nav-link">
                   <i class="fab fa-2x fa-fw fa-instagram icon"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fab fa-2x fa-fw fa-twitter icon"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fab fa-2x fa-fw fa-youtube icon"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="https://www.facebook.com/exordium.dev/" class="nav-link">
                   <i class="fab fa-2x fa-fw fa-facebook icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://discord.exordium.dev/" class="nav-link">
+                  <i class="fab fa-2x fa-fw fa-discord icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/exordium-dev" class="nav-link">
+                  <i class="fab fa-2x fa-fw fa-github icon"></i>
                 </a>
               </li>
             </ul>
