@@ -11,7 +11,11 @@
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/plugins/pace/pace.css" type="text/css" media="all">
 
     <!-- default style -->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-home.css" rel="stylesheet" type="text/css" media="all" />
+    <?php if (is_front_page()) { ?>
+      <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-home.css" rel="stylesheet" type="text/css" media="all" />
+    <?php } else { ?>
+      <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-blog.css" rel="stylesheet" type="text/css" media="all" />
+    <?php } ?>
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-additions.css" rel="stylesheet" type="text/css" media="all" />
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/exordium-wordpress.css" rel="stylesheet" type="text/css" media="all" />
 
