@@ -6,7 +6,9 @@
 
 ## Before we go live
 - List of very useful plugins that should be setup and added when we initially go live
- - `bbPress` for support forum.
+ - `bbPress`, for support forum.
+   - `bbPress Voting`, topics and replies up or down to surface the best replies.
+   - `BuddyPress`, adds community features to WordPress. Member Profiles, Activity Streams, Direct Messaging, Notifications, and more!
  - `WP Subtitle`, support has been added for this plugin on the theme side.
  - `WP User Avatar`, administrative users can choose to upload an avatar rather then use the gravatar function provided by Wordpress.
 
