@@ -6,7 +6,7 @@ get_header();
 # Page Content
 if ( have_posts() ) :
   while ( have_posts() ) : the_post();
-    if ( is_front_page() ) {
+    if ( is_front_page() && !has_post_thumbnail()) {
       get_template_part('partials/nav/nav-home');
       the_content();
     } else {
