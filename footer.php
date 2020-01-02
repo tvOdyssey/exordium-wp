@@ -6,22 +6,28 @@
             <?php get_template_part('partials/logo/logo-footer'); ?>
           </div>
         </div>
+        <?php
+          if (has_nav_menu( 'footer-menu' )) {
+        ?>
+
         <div class="row mb-4">
           <div class="col">
 
-            <?php
-              if (has_nav_menu( 'footer-menu' )) {
-                wp_nav_menu( array(
-                  'theme_location' => 'footer-menu',
-                  'container' => false,
-                  'menu_class' => 'nav justify-content-center'
-                  )
-                );
-              }
-            ?>
+        <?php
+            wp_nav_menu( array(
+              'theme_location' => 'footer-menu',
+              'container' => false,
+              'menu_class' => 'nav justify-content-center'
+              )
+            );
+        ?>
 
           </div>
         </div>
+
+        <?php
+          }
+        ?>
         <div class="row justify-content-center mt-5 mb-5">
           <div class="col-auto">
             <ul class="nav">
