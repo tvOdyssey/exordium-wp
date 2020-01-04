@@ -63,6 +63,7 @@
         <?php
           }
         ?>
+        
         <div class="row justify-content-center text-center">
           <div class="col-xl-10">
             <small class="text-muted">
