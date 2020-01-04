@@ -1,6 +1,7 @@
 function updateAboutNavbar () {
   mainNavbar = $('#mainNavbar');
-  mainNavbarHeight = mainNavbar.height() + 31.625; // not sure why but we gotta add that 31.625
+  mainNavbarHeight = mainNavbar.height();
+  // 31.625 is the size of thr wp-admin bar
 
   aboutNavbar = $('#aboutNavbar');
   aboutNavbar.css({ top: mainNavbarHeight + 'px' });
