@@ -5,8 +5,6 @@ function updateAboutNavbar () {
 
   aboutNavbar = $('#aboutNavbar');
   aboutNavbar.css({ top: mainNavbarHeight + 'px' });
-
-  console.log('sized');
 }
 
 // Where should the about nav be at load?
