@@ -12,6 +12,7 @@
         'include' => '8,9,10,11'
       );
 
+      # Print the navigation out. 
       $categories = get_categories( $args );
       foreach  ($categories as $category) {
         if ( in_array($category->name, $allowedCats) ) {
