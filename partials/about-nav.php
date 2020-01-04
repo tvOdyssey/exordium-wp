@@ -2,8 +2,17 @@
   <div class="row">
 
     <?php
+      # Dont give us random categories
       $allowedCats = array("General", "Resources", "Blog", "Company");
-      $categories = get_categories();
+
+      # Display the categories the way we want
+      $args = array(
+        'orderby' => 'include',
+        'order' => 'ASC',
+        'include' => '8,9,10,11'
+      );
+
+      $categories = get_categories( $args );
       foreach  ($categories as $category) {
         if ( in_array($category->name, $allowedCats) ) {
           //Display the sub category information using $category values like $category->cat_name
