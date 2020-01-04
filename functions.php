@@ -68,6 +68,7 @@ add_action( 'init', 'exordium_register_css' );
 
 # Include Javascript Files
 function exordium_register_js() {
+  
   # Bootstrap Scripts
   wp_enqueue_script( 'popper.min', get_template_directory_uri() . '/assets/js/popper.min.js', array ( 'jquery' ), 1.0, true);
   wp_enqueue_script( 'boostrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 1.0, true);
