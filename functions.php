@@ -99,6 +99,7 @@ function exordium_register_js() {
 
   # Main Functions Include
   wp_enqueue_script( 'exordium', get_template_directory_uri() . '/assets/js/exordium.js', array ( 'jquery' ), 1.0, true);
+  wp_enqueue_script( 'custom-exordium', get_template_directory_uri() . '/assets/js/custom.js', array ( 'jquery' ), 1.0, true);
 
 }
 add_action( 'init', 'exordium_register_js' );

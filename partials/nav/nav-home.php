@@ -1,4 +1,4 @@
-<div class="navbar-container bg-theme-dark">
+<div class="navbar-container bg-theme-dark" id="mainNavbar">
   <nav class="navbar navbar-expand-lg navbar-dark bg-theme-dark position-fixed" data-sticky="top">
     <div class="container">
       <a class="navbar-brand fade-page" href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -16,7 +16,7 @@
 </div>
 
 <!-- about navbar -->
-<div class="collapse navdropdownpanel" id="aboutNavItem">
+<div class="collapse navdropdownpanel" id="aboutNavbar">
   <div class="dropdown-tab bg-theme-dark text-light border-bottom">
     <?php get_template_part('partials/about-nav'); ?>
   </div>

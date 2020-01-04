@@ -25,7 +25,7 @@
     </li>
     <!-- desktop only version -->
     <li class="nav-item d-none d-lg-block">
-      <a href="#" class="nav-link" data-toggle="collapse" data-target="#aboutNavItem" aria-controls="aboutNavItem" aria-expanded="false" aria-label="About">
+      <a href="#" class="nav-link" data-toggle="collapse" data-target="#aboutNavbar" aria-controls="aboutNavbar" aria-expanded="false" aria-label="About">
         <i class="far fa-fw fa-users"></i>
         <?php esc_html_e( 'About', 'textdomain' ); ?>
       </a>
