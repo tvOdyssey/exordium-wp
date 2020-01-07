@@ -3,6 +3,11 @@
     <div class="row justify-content-center">
       <div class="col-xl-7 col-lg-8 col-md-10">
         <article class="article">
+          
+          <p class="lead">
+            <?php the_subtitle(); ?>
+          </p>
+
           <?php the_content(); ?>
         </article>
       </div>
