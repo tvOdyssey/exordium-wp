@@ -3,8 +3,6 @@
 # Include the header file
 get_header();
 
-# Include Blank White Header
-get_template_part('partials/nav/nav-page-light');
 
 # What are we right now?
 if ( have_posts() ) :
@@ -12,8 +10,10 @@ if ( have_posts() ) :
 
     # Cover Section
     if ( has_post_thumbnail() ) {
+      get_template_part('partials/nav/nav-page-transparent');
       get_template_part('partials/cover/cover-post');
     } else {
+      get_template_part('partials/nav/nav-page-light');
       get_template_part('partials/cover/cover-light');
     }
 

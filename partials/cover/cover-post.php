@@ -30,7 +30,7 @@
   </div>
 </div>
 <section class="bg-dark text-light overlay" data-overlay>
-  <img src="assets/img/article-10.jpg" alt="Image" class="bg-image opacity-50">
+  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Image" class="bg-image opacity-50">
   <div class="container pt-6">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-8">
@@ -38,23 +38,32 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Blog</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Welcome</a>
               </li>
-              <li class="breadcrumb-item">
-                <a href="#">Category</a>
-              </li>
+              <?php
+              # Get the Category Information
+              $categories = get_the_category();
+
+              if ( ! empty( $categories ) ) {
+                echo '<li class="breadcrumb-item">';
+                  echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">'. esc_html( $categories[0]->name ) . '</a>';
+                echo '</li>';
+              }
+              ?>
             </ol>
           </nav>
           <span class="badge bg-primary-alt text-primary">
-            <img class="icon bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />21</span>
+            <i class="fa fa-fw fa-heart"></i>
+            21
+          </span>
         </div>
-        <h1>Navigating the complexity of change aversion</h1>
+        <h1><?php the_title(); ?></h1>
         <div class="d-flex align-items-center">
-          <a href="#">
-            <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar mr-2">
+          <a href="<?php echo esc_url( get_the_author_meta( 'user_url' ) ); ?>">
+            <img src="<?php echo get_avatar_url( get_the_author_meta( 'ID' ) ); ?>" alt="<?php echo get_the_author_meta( 'nickname' ); ?>" class="avatar mr-2">
           </a>
           <div>
-            <div>by <a href="#">Benjamin Cameron</a>
+            <div>by <a href="<?php echo esc_url( get_the_author_meta( 'user_url' ) ); ?>"><?php echo get_the_author_meta( 'nickname' ); ?></a>
             </div>
             <div class="text-small text-muted">30th October</div>
           </div>
