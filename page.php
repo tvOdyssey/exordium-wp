@@ -95,8 +95,8 @@ if ( have_posts() ) :
       }
     endwhile;
 else :
-    // When no posts are found, output this text.
-    _e( 'Sorry, no posts matched your criteria.' );
+  // When no posts are found, output this text.
+  _e( 'Sorry, no posts matched your criteria.' );
 endif;
 wp_reset_postdata();
 
