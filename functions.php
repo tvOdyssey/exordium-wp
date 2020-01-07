@@ -7,19 +7,31 @@
 
 # Add customized supports for the exordium theme
 if ( !function_exists( 'exordium_setup' ) ) {
-    function exordium_setup() {
+  function exordium_setup() {
+    # <title> support
+    add_theme_support( 'title-tag' );
 
-      # <title> support
-      add_theme_support( 'title-tag' );
+    # post and page features thumbnails
+    add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+    add_image_size( 'fullwidth', 1920, 1080 );
+  }
 
-      # post and page features thumbnails
-      add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-      add_image_size( 'fullwidth', 1920, 1080 );
-
-    }
-
-    add_action( 'after_setup_theme', 'exordium_setup' );
+  add_action( 'after_setup_theme', 'exordium_setup' );
 }
+
+# Notify user about the Exordium Wordpress Core plugin
+function exordium_admin_notice(){
+  global $pagenow;
+
+  if ( $pagenow == 'index.php' ) {
+    if ( !is_plugin_active( 'exordium-wp-core/exordium-wp-core.php' )) {
+      echo '<div class="notice notice-warning is-dismissible">';
+       echo '<p>Using the Exordium Wordpress Theme? We suggest using our <a href="https://github.com/tvOdyssey/exordium-wp-core">Exordium Core Plugin</a> to maximize the theme to its full potential!</p>';
+      echo '</div>';
+    }
+  }
+}
+add_action('admin_notices', 'exordium_admin_notice');
 
 # Add support for the 3 main menus.
 function exordium_new_menus() {
@@ -68,7 +80,7 @@ add_action( 'init', 'exordium_register_css' );
 
 # Include Javascript Files
 function exordium_register_js() {
-  
+
   # Bootstrap Scripts
   wp_enqueue_script( 'popper.min', get_template_directory_uri() . '/assets/js/popper.min.js', array ( 'jquery' ), 1.0, true);
   wp_enqueue_script( 'boostrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 1.0, true);
