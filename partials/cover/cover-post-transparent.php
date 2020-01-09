@@ -52,10 +52,6 @@
               ?>
             </ol>
           </nav>
-          <span class="badge bg-primary-alt text-primary">
-            <i class="fa fa-fw fa-heart"></i>
-            21
-          </span>
         </div>
         <h1><?php the_title(); ?></h1>
         <div class="d-flex align-items-center">
