@@ -11,7 +11,7 @@ if ( have_posts() ) :
     # Cover Section
     if ( has_post_thumbnail() ) {
       get_template_part('partials/nav/nav-page-transparent');
-      get_template_part('partials/cover/cover-post');
+      get_template_part('partials/cover/cover-post-transparent');
     } else {
       get_template_part('partials/nav/nav-page-light');
       get_template_part('partials/cover/cover-light');
