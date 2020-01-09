@@ -46,4 +46,5 @@ endif;
 wp_reset_postdata();
 
 # Footer
+get_template_part('partials/footer/footer-home');
 get_footer();
