@@ -47,6 +47,20 @@ function exordium_new_menus() {
 }
 add_action( 'init', 'exordium_new_menus' );
 
+# Remove archive type from the archive title function
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+            $title = single_cat_title( '', false );
+        } elseif ( is_tag() ) {
+            $title = single_tag_title( '', false );
+        } elseif ( is_author() ) {
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+        } elseif ( is_tax() ) { //for custom post types
+            $title = sprintf( __( '%1$s' ), single_term_title( '', false ) );
+        }
+    return $title;
+});
+
 # Subtitle Support
 function my_wp_subtitle_page_part_support() {
 	add_post_type_support( 'my_post_type', 'wps_subtitle' );
