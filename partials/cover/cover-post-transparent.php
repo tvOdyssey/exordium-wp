@@ -59,7 +59,8 @@
             <img src="<?php echo get_avatar_url( get_the_author_meta( 'ID' ) ); ?>" alt="<?php echo get_the_author_meta( 'nickname' ); ?>" class="avatar mr-2">
           </a>
           <div>
-            <div>by <a href="<?php echo esc_url( get_the_author_meta( 'user_url' ) ); ?>"><?php echo get_the_author_meta( 'nickname' ); ?></a>
+            <div>
+              by <a href="<?php echo esc_url( get_the_author_meta( 'user_url' ) ); ?>"><?php echo get_the_author_meta( 'nickname' ); ?></a>
             </div>
             <div class="text-small text-muted"><?php echo get_the_date(); ?></div>
           </div>
