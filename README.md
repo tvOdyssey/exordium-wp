@@ -1,5 +1,9 @@
 # Exordium Wordpress Theme
 
+**This repository has been archived and will no longer be updated. Please look at our new repo for the [exordium-website](https://github.com/exordium-dev/exordium-website) here.**
+
+--
+
 `exordium-wp` is a customized wordpress theme made for the https://exordium.dev website. Exordium is a virtual private networking software in the works.
 
 ![Screenshot of the Exordium theme](screenshot.png)
